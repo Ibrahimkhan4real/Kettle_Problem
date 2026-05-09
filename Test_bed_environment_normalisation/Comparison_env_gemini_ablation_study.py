@@ -68,11 +68,11 @@ def train_models(total_timesteps=4000_000, seed=71):
         ent_coef=0.03,
         learning_rate=3e-4,
         seed=seed,
-        use_sde=True,
+        use_sde=False,
         policy_kwargs=dict(
         net_arch=[128, 128],  # Larger network
         activation_fn=torch.nn.Tanh,
-        squash_output=True,  # Ensure proper action scaling
+        squash_output=False,  # Ensure proper action scaling
     ),
     normalize_advantage=True,  # Better gradient scaling
     clip_range=0.2,  # More aggressive clipping
