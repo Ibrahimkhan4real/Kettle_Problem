@@ -1,0 +1,11 @@
+.tmp.drivedownload
+.tmp.driveuploadCode/Reinforcement_learning/Kettle/logs/kettle_log.csv
+Code/Reinforcement_learning/Kettle/logs/kettle_log.csv
+Code/Reinforcement_learning/Kettle/logs/kettle_log.csv
+Code/Reinforcement_learning/Kettle/logs/kettle_log.csv
+*.csv
+
+*.csv
+EnergyPlus-*.sh
+
+test_ignore.txt
