@@ -1,0 +1,11 @@
+# Generated Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+# Local agent settings and credentials
+.claude/
+.env
+.env.*
+!.env.example

@@ -14,7 +14,7 @@ class SimpleKettleEnv(gym.Env):
         super(SimpleKettleEnv, self).__init__()
 
         # === Environment Parameters ===
-        self.initial_temp = 20.0           # Starting temperature in °C
+        self.initial_temp = 20.0           # Starting temperature in °C.
         self.target_temp = 100.0           # Target temperature in °C
         self.ambient_temp = 20.0           # Ambient temperature
         self.max_temp = 150.0              # Physical upper limit
@@ -30,7 +30,7 @@ class SimpleKettleEnv(gym.Env):
         self.shaping_gemma = 1             # Reward shaping factor
 
         self.alpha = 0.000001  # Energy penalty weight
-        self.beta = 0.01       # Temperature penalty weight?
+        self.beta = 0.01       # Temperature penalty weight
 
         # === Action Space ===
         self.action_space = spaces.Box(low=np.array([-1.0]), high=np.array([1.0]), dtype=np.float32)
